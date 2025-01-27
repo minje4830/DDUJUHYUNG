@@ -4,20 +4,20 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* 상단에 배치 */
+    align-items: flex-start; /* 상단에 배치 */
     height: 100vh;
 }
 
 .container {
     display: flex;
-    flex-direction: column; /* 요소들을 세로로 정렬 */
-    align-items: center; /* 가로 중앙 정렬 */
-    gap: 20px; /* 각 요소 간의 간격 */
-    padding: 20px; /* 컨테이너 내부 여백 */
-    max-width: 800px; /* 최대 너비를 800px로 제한 */
-    width: 100%; /* 화면 크기에 맞춰 100%로 설정되지만 최대 800px까지만 확장 */
-    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 40px; /* 상단 간격 */
 }
 
 h1 {
