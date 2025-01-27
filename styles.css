@@ -1,15 +1,12 @@
-html, body {
-    height: 100%; /* 전체 페이지 높이를 100%로 설정 */
-    margin: 0;
-}
-
 body {
-    display: flex;
-    flex-direction: column;  /* 컨텐츠를 위에서 아래로 정렬 */
-    justify-content: center;  /* 수직 중앙 정렬 */
-    align-items: center;      /* 수평 중앙 정렬 */
-    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
@@ -19,7 +16,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
-    margin-bottom: 20px; /* 아래쪽 여백 */
 }
 
 h1 {
