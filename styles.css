@@ -52,12 +52,3 @@ button {
 button:hover {
     background-color: #45a049;
 }
-
-/* 저작권 정보를 위한 스타일 */
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-}
