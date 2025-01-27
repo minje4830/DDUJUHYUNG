@@ -75,4 +75,5 @@ function decodeText() {
     let inputText = document.getElementById("inputTextDecode").value;
     let decodedText = ddu64.decode(inputText);
     document.getElementById("outputTextDecode").value = decodedText;
+    
 }
