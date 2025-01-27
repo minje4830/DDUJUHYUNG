@@ -50,12 +50,14 @@ class Ddu64 {
             let char1Index = this.dduChar.indexOf(chunks[i][0]);
             let char2Index = this.dduChar.indexOf(chunks[i][1]);
     
+            // 유효하지 않은 인덱스가 있을 경우 오류를 발생시킴
             if (char1Index === -1 || char2Index === -1) {
                 throw new Error("Invalid encoding characters detected.");
             }
     
+            // 6비트 이진수 생성
             let charBin = (char1Index * 8 + char2Index).toString(2);
-            charBin = "0".repeat(6 - charBin.length) + charBin; // 6비트로 맞추기
+            charBin = charBin.padStart(6, '0'); // 6비트로 맞추기
             decodedBin += charBin;
         }
     
@@ -64,7 +66,7 @@ class Ddu64 {
         let decoded = [];
         let binChunks = this.splitString(decodedBin, 8);
     
-        // 8비트 단위로 잘라서 다시 바이트 배열로 변환
+        // 8비트씩 잘라서 다시 바이트 배열로 변환
         for (let i = 0; i < binChunks.length; i++) {
             decoded.push(parseInt(binChunks[i], 2));
         }
@@ -72,6 +74,7 @@ class Ddu64 {
         let decoder = new TextDecoder(); // UTF-8 디코딩
         return decoder.decode(new Uint8Array(decoded)); // 바이트 배열을 문자열로 디코딩
     }
+    
     
 }
 
