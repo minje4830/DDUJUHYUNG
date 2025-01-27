@@ -15,6 +15,8 @@ body {
     align-items: center; /* 가로 중앙 정렬 */
     gap: 20px; /* 각 요소 간의 간격 */
     padding: 20px; /* 컨테이너 내부 여백 */
+    max-width: 800px; /* 최대 너비를 800px로 제한 */
+    width: 100%; /* 화면 크기에 맞춰 100%로 설정되지만 최대 800px까지만 확장 */
 }
 
 h1 {
