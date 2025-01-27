@@ -19,8 +19,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
+    margin: 0 auto; /* 수평 가운데 정렬 */
     margin-bottom: 20px; /* 아래쪽 여백 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 화면 높이 전체를 차지하도록 설정 (수직 가운데 정렬) */
 }
+
 
 h1 {
     text-align: center;
