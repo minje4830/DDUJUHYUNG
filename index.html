@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encoder/Decoder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Encoder/Decoder</h1>
+        
+        <!-- Encode Section -->
+        <section>
+            <h2>Encode</h2>
+            <textarea id="inputTextEncode" placeholder="Enter text to encode..."></textarea>
+            <button onclick="encodeText()">Encode</button>
+            <textarea id="outputTextEncode" placeholder="Encoded text will appear here..."></textarea>
+        </section>
+
+        <!-- Decode Section -->
+        <section>
+            <h2>Decode</h2>
+            <textarea id="inputTextDecode" placeholder="Enter encoded text to decode..."></textarea>
+            <button onclick="decodeText()">Decode</button>
+            <textarea id="outputTextDecode" placeholder="Decoded text will appear here..."></textarea>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
