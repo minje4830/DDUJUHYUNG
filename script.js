@@ -1,5 +1,5 @@
 class Ddu64 {
-    constructor(dduChar = ["뜌", "땨", "조", "주", "형", "!", "?", "."], paddingChar = "뭐") {
+    constructor(dduChar = ["뜌", "땨", "도", "존", "박", "!", "?", "."], paddingChar = "뭐") {
         this.dduChar = dduChar;
         this.paddingChar = paddingChar;
     }
@@ -94,3 +94,4 @@ function decodeText() {
     document.getElementById("outputTextDecode").value = decodedText;
 
 }
+
